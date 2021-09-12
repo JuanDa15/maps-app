@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/normalize.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -40,8 +41,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",

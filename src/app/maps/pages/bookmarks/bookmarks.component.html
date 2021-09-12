@@ -1,0 +1,19 @@
+<div  class="map__container"
+      #map>
+</div>
+
+<ul class="bookmarks">
+      <li   class="bookmark"
+            *ngFor="let bookmark of bookmarksArr;let i = index"
+            [ngStyle]="{
+                  'background-color': bookmark.color,
+                  'color':'#fff'
+            }"
+            (click)="toBookmark(bookmark.bookmark!)"
+            (dblclick)="deleteBookmark(i)">bookmark {{i + 1}}
+      </li>
+      <li   class="bookmark__btn"
+            (click)="addBookmark()">Agregar +</li>
+</ul>
+<middle></middle>
+<coords [center]="center"></coords>

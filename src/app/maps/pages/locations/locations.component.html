@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="title">Locations</h1>
+  <div class="divider"></div>
+  <section  class="locations__container">
+    <article  *ngFor="let location of locationsArr;let i = index"
+              [routerLink]="['../detailed',i]">
+      <minimap [center]="location.lngLat"></minimap>
+      <h2>{{location.titulo}}</h2>
+      <p>{{location.descripcion}}</p>
+    </article>
+  </section>
+</div>

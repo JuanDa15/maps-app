@@ -1,0 +1,22 @@
+<div  class="map__container"
+      #map>
+</div>
+<div class="zoom__container">
+      <label>Zoom: {{zoom | number:'2.0-2'}}</label>
+      <div class="zoom__input">
+            <button     (click)="zoomOut()">
+                  -
+            </button>
+            <input      type="range"
+                        [value]="zoom"
+                        min="2"
+                        max="19"
+                        #zoomInput
+                        (input)="inputZoom()">
+            <button     (click)="zoomIn()">
+                  +
+            </button>
+      </div>
+</div>
+<middle></middle>
+<coords [center]="center"></coords>

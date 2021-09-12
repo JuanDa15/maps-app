@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+$alice_blue : #e7ecef;
+$yale_blue: #274c77;
+$cerulean_frost: #6096ba;
+$baby_blue_eyes: #a3cef1;
+$battleship_gray: #8b8c89;
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.map__container{
+  min-width: 100vw;
+  min-height: 100vh;
+}
